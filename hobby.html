@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Your Name] - Hobbies</title>
+
+    <!-- 1. Load Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- 2. Link to your pure CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <nav class="container">
+            <!-- Logo / Name -->
+            <a href="index.html" class="logo">
+                Jinen
+            </a>
+
+            <!-- Navigation Menu -->
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <!-- This is now the active page -->
+                <li><a href="hobby.html" class="active">Hobby</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <!-- I've added an ID here to help scope the new animations -->
+    <main id="hobby-page" class="container">
+
+        <!-- Page Introduction -->
+        <section class="section-intro">
+            <h2>What I Do For Fun</h2>
+            <p>
+                When I'm not in front of a computer, I love to disconnect and explore
+                other passions. Here are a few of my favorites.
+            </p>
+        </section>
+
+        <!-- Decorative Divider -->
+        <hr class="divider">
+
+        <!-- Hobby Grid -->
+        <section class="hobby-grid">
+
+            <!-- Hobby 1 -->
+            <div class="hobby-card card-hover">
+                <img src="img/music.png" alt="Playing musical instrument">
+                <div class="hobby-card-content">
+                    <h3>Musical Instruments</h3>
+                    <p>
+                        I love the challenge of learning new songs and the process of
+                        creating music, primarily on guitar and piano.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Hobby 2 -->
+            <div class="hobby-card card-hover">
+                <img src="img/book.png" alt="Reading book">
+                <div class="hobby-card-content">
+                    <h3>Reading</h3>
+                    <p>
+                        Getting lost in a good book is my favorite way to unwind. I'm a
+                        big fan of science fiction and fantasy novels.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Hobby 3 -->
+            <div class="hobby-card card-hover">
+                <img src="img/movie.png" alt="Watching movie">
+                <div class="hobby-card-content">
+                    <h3>Watching Movies</h3>
+                    <p>
+                        From classic cinema to modern blockbusters, I'm fascinated by
+                        the art of storytelling through film.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Hobby 4 -->
+            <div class="hobby-card card-hover">
+                <img src="img/travel.jpg" alt="Traveling">
+                <div class="hobby-card-content">
+                    <h3>Traveling</h3>
+                    <p>
+                        Exploring new places, experiencing different cultures, and trying
+                        new foods is what I look forward to most.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Jinen. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
