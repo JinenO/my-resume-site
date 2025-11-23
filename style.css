@@ -109,15 +109,39 @@ main.container {
     border-bottom: 2px solid var(--accent-dark);
 }
 
-/* Hide nav menu on small screens (pure CSS, no JS) */
+/* --- UPDATED: Mobile Navigation (No JS required) --- */
 @media (max-width: 640px) {
-    .nav-menu {
-        display: none;
+
+    /* 1. Change the header layout to a vertical column */
+    .site-header .container {
+        flex-direction: column;
+        /* Stack Logo on top of Menu */
+        height: auto;
+        /* Allow height to expand automatically */
+        padding: 1rem;
+        /* Add some padding */
     }
 
-    /* Make logo centered on mobile when nav is hidden */
-    .site-header .container {
-        justify-content: center;
+    /* 2. Show the menu and stack links vertically */
+    .nav-menu {
+        display: flex;
+        /* Force it to show (do NOT use display: none) */
+        flex-direction: column;
+        /* Stack links vertically */
+        gap: 1rem;
+        /* Add space between links */
+        margin-top: 1rem;
+        /* Add space between Logo and Menu */
+        width: 100%;
+        /* Full width */
+        align-items: center;
+        /* Center the links */
+    }
+
+    /* Optional: Make the touch targets bigger for mobile */
+    .nav-menu a {
+        padding: 0.5rem 1rem;
+        display: block;
     }
 }
 
@@ -714,4 +738,28 @@ main.container {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.profile-pic {
+    width: 180px;
+    /* Size of the circle */
+    height: 250px;
+    /* Size of the circle */
+    border-radius: 50%;
+    /* Makes it perfectly round */
+    object-fit: cover;
+    /* Ensures the photo doesn't get squashed */
+
+    /* Styling borders and shadows */
+    border: 4px solid var(--accent-dark);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+
+    /* Spacing */
+    margin-bottom: 1.5rem;
+
+    /* Animation settings */
+    animation: fadeInUp 0.7s ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: 0s;
+    /* Appears first, before the text */
 }
