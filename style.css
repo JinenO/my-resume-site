@@ -8,6 +8,30 @@
     --font-sans: 'Inter', sans-serif;
 }
 
+.profile-pic {
+    width: 180px;
+    /* Size of the circle */
+    height: 250px;
+    /* Size of the circle */
+    border-radius: 50%;
+    /* Makes it perfectly round */
+    object-fit: cover;
+    /* Ensures the photo doesn't get squashed */
+
+    /* Styling borders and shadows */
+    border: 4px solid var(--accent-dark);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+
+    /* Spacing */
+    margin-bottom: 1.5rem;
+
+    /* Animation settings */
+    animation: fadeInUp 0.7s ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: 0s;
+    /* Appears first, before the text */
+}
+
 /* --- 2. Global Styles & Reset --- */
 * {
     margin: 0;
@@ -740,26 +764,3 @@ main.container {
     }
 }
 
-.profile-pic {
-    width: 180px;
-    /* Size of the circle */
-    height: 250px;
-    /* Size of the circle */
-    border-radius: 50%;
-    /* Makes it perfectly round */
-    object-fit: cover;
-    /* Ensures the photo doesn't get squashed */
-
-    /* Styling borders and shadows */
-    border: 4px solid var(--accent-dark);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-
-    /* Spacing */
-    margin-bottom: 1.5rem;
-
-    /* Animation settings */
-    animation: fadeInUp 0.7s ease-out;
-    animation-fill-mode: backwards;
-    animation-delay: 0s;
-    /* Appears first, before the text */
-}
